@@ -23,7 +23,7 @@ idx = strfind(K,'.');
 end
 
 function [ind,g]=genetic(q,t)
-%Generación poblacion inicial con individuos con longitud K donde K es el
+%GeneraciÃ³n poblacion inicial con individuos con longitud K donde K es el
 %numero de parrafos en el texto.
 maxIter=1000;
 sizePob=200;
@@ -33,7 +33,7 @@ selectP=zeros(sizePob*.50,lengP);
 fr=zeros(sizePob,1);
 pl=zeros(10,1);
 %fitness(q,t,);
-for i=1:10
+for i=1:100
         %evaluacion de la poblacion inicial
         for j=1:sizePob
            fr(j)=fitness(q,t,pobinit(j,:));
@@ -111,7 +111,7 @@ end
     g
 end
 
-%Evaluación de las restricciones 
+%EvaluaciÃ³n de las restricciones 
 function fit=fitness(K,t,kp)
 tot=0;
 lengP=length(kp);
