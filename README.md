@@ -1,2 +1,3 @@
 # SumarizationAG
-Algoritmo genético que resume textos 
+
+Only for academic and research use.
